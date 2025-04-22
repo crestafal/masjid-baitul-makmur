@@ -1,0 +1,6 @@
+{
+  "images": [
+    { "url": "https://example.com/image1.jpg" },
+    { "url": "https://example.com/image2.jpg" }
+  ]
+}
