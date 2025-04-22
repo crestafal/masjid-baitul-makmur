@@ -1,0 +1,29 @@
+backend:
+  name: github
+  repo: crestafal/masjid-baitul-makmur  # Update this if your username/repo is different
+  branch: main
+
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+collections:
+  - name: "homepage"
+    label: "Homepage Content"
+    files:
+      - label: "Galeri"
+        name: "galeri"
+        file: "content/galeri.json"
+        fields:
+          - label: "Gambar"
+            name: "images"
+            widget: list
+            field:
+              label: "URL"
+              name: "url"
+              widget: string
+
+      - label: "Total Donasi"
+        name: "donation"
+        file: "content/donation.json"
+        fields:
+          - { label: "Jumlah Donasi", name: "amount", widget: "string" }
